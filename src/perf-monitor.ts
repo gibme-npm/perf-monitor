@@ -22,6 +22,14 @@ import { performance } from 'perf_hooks';
 
 export default class PerformanceMonitor {
     private _startTime = performance.now();
+    public readonly genesis = this._startTime;
+
+    /**
+     * Returns the current mark
+     */
+    public get current_mark (): number {
+        return this._startTime;
+    }
 
     /**
      * Sets the mark
@@ -46,11 +54,20 @@ export default class PerformanceMonitor {
      * @param decimals
      */
     public measureAndMark (decimals = 8): number {
-        const result = this.measure(decimals);
+        const measure = this.measure(decimals);
 
         this.mark();
 
-        return result;
+        return measure;
+    }
+
+    /**
+     * Returns the amount of time passes in ms since the instance was created
+     *
+     * @param decimals
+     */
+    public total (decimals = 8): number {
+        return this.format(performance.now() - this.genesis, decimals);
     }
 
     /**

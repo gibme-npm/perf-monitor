@@ -1,5 +1,11 @@
 # Simple Performance Monitoring
 
+## Documentation
+
+[https://gibme-npm.github.io/perf-monitor/](https://gibme-npm.github.io/perf-monitor/)
+
+## Sample Code
+
 ```typescript
 import PerformanceMonitor from './perf-monitor';
 
