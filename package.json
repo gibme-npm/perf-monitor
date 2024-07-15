@@ -1,6 +1,6 @@
 {
   "name": "@gibme/perf-monitor",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "description": "A very simple performance monitor",
   "main": "dist/perf-monitor.js",
   "types": "dist/perf-monitor.d.ts",
