@@ -1,4 +1,4 @@
-// Copyright (c) 2016-2022, Brandon Lehmann <brandonlehmann@gmail.com>
+// Copyright (c) 2016-2025, Brandon Lehmann <brandonlehmann@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,7 +20,7 @@
 
 import assert from 'assert';
 import { describe, it } from 'mocha';
-import PerformanceMonitor from '../src/perf-monitor';
+import PerformanceMonitor from '../src';
 
 describe('Unit Tests', () => {
     const timer = new PerformanceMonitor();
