@@ -19,7 +19,7 @@
 // SOFTWARE.
 
 import assert from 'assert';
-import { describe, it } from 'mocha';
+import { describe, it } from 'node:test';
 import PerformanceMonitor from '../src';
 
 describe('Unit Tests', () => {
